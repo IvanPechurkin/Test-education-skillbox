@@ -1,1 +1,26 @@
+package main
 
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+func main() {
+	fmt.Println("Давайт тренировать твои навыки в математике")
+	rand.Seed(time.Now().UnixNano())
+	for {
+		a := rand.Intn(100)
+		b := rand.Intn(100)
+		result := 0
+		for a+b != result {
+			fmt.Print(a, "+", b, "=")
+			fmt.Scan(&result)
+			if a+b != result {
+				fmt.Println("Артём ну ё моё, как же так, попробуй еще раз")
+			}
+		}
+		fmt.Println("Красавчик, так держать!!!! МУЖИИИИИИК!!!!")
+	}
+
+}
