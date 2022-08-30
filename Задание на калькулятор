@@ -13,13 +13,13 @@ func main() {
 		a := rand.Intn(100)
 		b := rand.Intn(100)
 		result := 0
-		for a+b != result {
-			fmt.Print(a, "+", b, "=")
-			fmt.Scan(&result)
-			if a+b != result {
-				fmt.Println("Артём ну ё моё, как же так, попробуй еще раз")
+			for a+b != result {
+				fmt.Print(a, "+", b, "=")
+				fmt.Scan(&result)
+					if a+b != result {
+					fmt.Println("Артём ну ё моё, как же так, попробуй еще раз")
+					}
 			}
-		}
 		fmt.Println("Красавчик, так держать!!!! МУЖИИИИИИК!!!!")
 	}
 
